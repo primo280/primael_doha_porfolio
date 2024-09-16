@@ -16,47 +16,50 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Bonjour je suis{" "}
-            </span>
-            <br></br>
-            <TypeAnimation
-              sequence={[
-                "DOHA Primael",
-                1000,
-                "Developpeur web",
-                1000,
-                "Developpeur Mobile",
-                1000,
-                "UI/UX Designer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
-          </h1>
+  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+    Bonjour je suis {" "}
+  </span>
+  <br />
+  <TypeAnimation
+    sequence={[
+      "DOHA Primael",
+      1000,
+      "Développeur web",
+      1000,
+      "Développeur Mobile",
+      1000,
+      "UI/UX Designer",
+      1000,
+    ]}
+    wrapper="span"
+    speed={50}
+    repeat={Infinity}
+    className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600"
+  />
+</h1>
+
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
             Wakeup Dev : Donnez vie à vos visions numériques
           </p>
           <div>
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-custom-violet to-custom-violet-dark hover:bg-custom-violet-dark text-white"
             >
               Embauchez-moi
             </Link>
             <Link
               href="/mon-cv.pdf"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-custom-violet to-custom-violet-dark hover:bg-custom-violet-dark text-white mt-3"
               target="_blank"  // Ouvre le lien dans un nouvel onglet
               rel="noopener noreferrer"  // Pour plus de sécurité
               download="mon-cv.pdf"  // Propose automatiquement le fichier en téléchargement
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+              <span className="block bg-custom-violet-dark hover:bg-custom-violet rounded-full px-5 py-2">
                 Télécharger le CV
               </span>
             </Link>
+
 
           </div>
         </motion.div>
@@ -73,7 +76,7 @@ const HeroSection = () => {
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
-              
+
             />
           </div>
         </motion.div>
